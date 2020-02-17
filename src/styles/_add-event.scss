@@ -1,0 +1,82 @@
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    flex-grow: 1;
+    background-color: white;
+    padding: 10px;
+    margin: 2rem 0;
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: $divider-color;
+}
+.form-input:focus {
+    border-color: $primary-color;
+  }
+
+.submit-btn {
+    align-self: flex-end;
+    color: white;
+    font-weight: bold;
+    padding: $s-size;;
+    margin: 2rem 0;
+    border-radius: 5px;
+    background-color: $primary-color;
+    border-style: none;
+}
+
+
+.form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #d2d2d2;
+    outline: 0;
+    font-size: 16px;
+    color: #212121;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 16px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  label,
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 12px;
+    color: #9b9b9b;
+  }
+  
+  .form__field:focus ~ .form__label {
+    color: $primary-color;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    border-bottom: 2px solid $primary-color;
+  }

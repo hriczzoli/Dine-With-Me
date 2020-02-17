@@ -1,0 +1,39 @@
+.bottom-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: fixed;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    a {
+        color: $divider-color;
+        text-decoration: none;
+    }
+}
+
+.nav-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    svg {
+        color: $nav-items;
+    }
+    .nav-item {
+        font-size: 1rem;
+    }
+    .active {
+        color: $primary-color;
+        svg {
+            color: $primary-color;
+        }
+    }
+    .inactive {
+        color: $divider-color;
+    }
+}

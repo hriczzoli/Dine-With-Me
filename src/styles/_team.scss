@@ -1,0 +1,39 @@
+.team-list-item {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-bottom: 0.5px solid #bdbdbd;
+}
+
+.team-item-header {
+    display: flex;
+    align-items: center;
+    margin-top:1rem;
+    .team-icon {
+        margin-right: 2rem;
+    }
+    h3 {
+        margin: 0px;
+        flex-grow: 1;
+    }
+    .remove-btn {
+        font-size: 2rem;
+    }
+}
+
+.team-item-body {
+    padding: 0 4rem;
+    p {
+        margin: 0px;
+        padding-left: 2rem;
+    }
+}
+
+.add-team-btn {
+    background-color: $accent-color;
+    color: white;
+    border-radius: 3px;
+    width: 25%;
+    align-self: flex-end;
+    padding: 1rem;
+}

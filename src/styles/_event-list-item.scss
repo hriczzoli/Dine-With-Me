@@ -1,0 +1,42 @@
+.event-list-item {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin: $m-size;
+    border-radius: 5px;
+    .event-header-img {
+        height: 200px;
+        width: 100%;
+        background: url('../assets/table.jpg');
+        background-size: cover;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .event-content {
+        padding: $m-size;
+    }
+    .actions-container {
+        display: flex;
+        padding: 0 1rem;
+    }
+    h3 {
+        margin-top: 0;
+    }
+    p {
+        margin: 0px;
+        color: $secondary-text;
+    }
+    button {
+        align-self: flex-end;
+        color: $primary-color;
+        padding: $s-size;
+    }
+}
+
+.team-number-indicator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20%;
+    justify-content: space-around;
+}
