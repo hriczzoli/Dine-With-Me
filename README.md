@@ -1,3 +1,5 @@
+![Mobile view of the application](mobile.png)
+
 # Dine with Me
 
 A side project I started working on for my firends' game
